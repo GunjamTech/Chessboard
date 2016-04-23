@@ -1,0 +1,13 @@
+# SERVER-SIDE
+.gradle/
+.idea/
+build/
+META-INF/
+out/
+*.iml
+*.ipr
+*.iws
+*.log*
+*.class
+.idea/
+classes/
