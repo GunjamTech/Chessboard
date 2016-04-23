@@ -1,6 +1,5 @@
 Objective of application:
-the program when runs scrapes the given html page listing the products and return a JSON with a list
- of all product details along with a total of unit price of listed products.
+It takes as input a string and create a Chessboard row representation
 
 Required Environment/Tools
 Java 1.7+
@@ -17,11 +16,3 @@ To execute Jar:
 
 java -jar chessboard.jar <string>
 
-
-
-
-
-
-
-
-# Chessboard
