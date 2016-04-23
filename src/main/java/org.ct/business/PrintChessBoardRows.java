@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class PrintChessBoardRows {
+    List<Character> validCharacters = Arrays.asList('p', 'k', 'q', 'b', 'n', 'r');
 
     public  String printChessBoardRows(String board){
         String[] rows = board.split("/");
@@ -23,10 +24,10 @@ return  rep.toString();
     }
 
     private String getRowRepresentation(String row) {
-        List<Character> validCharacters = Arrays.asList('p', 'k', 'q', 'b', 'n', 'r', 'P', 'K', 'Q', 'B', 'N', 'R');
+
         StringBuffer rowRepresentation = new StringBuffer();
         for (int i = 0; i < row.length(); i++) {
-            if (validCharacters.contains(row.charAt(i))) {
+            if (validCharacters.contains(Character.toLowerCase(row.charAt(i)))) {
                 rowRepresentation = rowRepresentation.append(row.charAt(i));
             } else if (Character.isDigit(row.charAt(i))) {
                 for (int j = 0; j < Integer.parseInt(String.valueOf(row.charAt(i))); j++) {
